@@ -1,7 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-
 dotenv.config();
 mongoose.connect(process.env.MONGODB_MONGO).then(()=>{
     console.log('Connected to MongoDB');
